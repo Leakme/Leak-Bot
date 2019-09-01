@@ -1,7 +1,7 @@
     
-const botconfig = require("./botconfig.json");
 const tokenfile = require("./token.json");
 const Discord = require("discord.js");
+const botconfig = require("./botconfig.json");
 const fs = require("fs");
 const bot = new Discord.Client({disableEveryone: true});
 bot.commands = new Discord.Collection();
@@ -24,7 +24,10 @@ fs.readdir("./commands/", (err, files) => {
 
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online on ${bot.guilds.size} servers!`);
-  bot.user.setActivity("Leakme", {type: "WATCHING"});
+  bot.user.setActivity("LEAKBOTV2", {type: "STREAMING", url:"https://www.twitch.tv/tazefazeleak"});
+  
+  
+
 
 
 
