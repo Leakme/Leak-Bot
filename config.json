@@ -1,3 +1,4 @@
 {
-  "ticketcolor": "#00a300"
+  "ticketcolor": "#00a300",
+  "cooldown": "5"
 }
